@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Activity 1</title>
+
+    <!-- Include the bootstrap CSS file from a CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.css">
+</head>
+
+<body>
+    <!-- Add these classes to your <nav> element: navbar navbar-expand-lg navbar-light bg-light -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Add the class "navbar-nav" to your <ul> element -->
+        <ul class="navbar-nav">
+            <!-- Add the class "nav-item" to each <li> element -->
+            <li class="nav-item">
+                <!-- Add the class "nav-link" to each <a> element -->
+                <a class="nav-link" href="#section-1">Section 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section-2">Section 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section-3">Section 3</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Add class "container" to each <section> element -->
+        <!-- Add the following classes this section: text-white bg-info rounded p-5 mb-5 mt-3-->
+        <section id="section-1" class="container text-white bg-info rounded p-5 mb-5 mt-3">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil non hic, quibusdam excepturi aliquam explicabo accusantium
+                ipsa esse sint tempore odit ex, qui culpa et quod tempora in impedit dignissimos.
+            </p>
+
+        </section>
+        <section id="section-2" class="container">
+            <!-- Add class "list-group" to the <ul> element -->
+            <ul class="list-group">
+                <!-- Add class "list-group-item" to each <li> element -->
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+
+        </section>
+        <!-- Add class mt-5 to this section -->
+        <section id="section-3" class="container mt-5">
+            <!-- Add class row to this div -->
+            <!-- Add the classes "col border border-success p3" to each div inside of a row -->
+            <div class="row">
+                <!-- Add classes to this div so that it has the following styles:
+                    - Takes up 4 columns on large screens
+                    - Takes up 6 columns on medium screens
+                    - Takes up 12 columns on small screens
+                -->
+                <div class="col-sm-12 col-md-6 col-lg-4 border border-success p-3">
+                    1 of 2
+                </div>
+                <div class="col border border-success p-3">
+                    2 of 2
+                </div>
+            </div>
+            <!-- Add class row to this div -->
+            <div class="row">
+                <!-- Add classes to each div div so that it has the following styles:
+                    - Takes up 2 columns on large screens
+                    - Takes up 6 columns on medium screens
+                    - Takes up 1 columns on small screens
+                -->
+                <div class="col col-lg-2 col-md-6 col-sm-1 border border-success p-3">
+                    1 of 3
+                </div>
+                <div class="col col-lg-2 col-md-6 col-sm-1 border border-success p-3">
+                    2 of 3
+                </div>
+                <div class="col col-lg-2 col-md-6 col-sm-1 border border-success p-3">
+                    3 of 3
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
