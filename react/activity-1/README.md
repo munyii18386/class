@@ -1,8 +1,11 @@
-# Exercise-2
-In this exercise, you'll practice passing props to a simple react component. This is a simple extension of **exercise-1**, except we are passing values into the component via _props_
+# Activity-1
+In this activity, you'll practice passing props to a simple react component, and nesting your components.
 
-In your `main.jsx` file, you'll want to do the following:
+In your `index.js` file, you'll want to do the following:
 
-- Create a React component called `MyComponent`
-- Then, your `render` function should return a `<div>` with two `<p>` elements in side of it. The first `<p>` should say "Hello, my name is NAME", and the second should say "I am interested in INTEREST". Make sure to _reference your component props_
-- After you've created your component, you should use `ReactDOM` to render your component in the `main` element on your page. Make sure to pass variables into your component as props!
+- Create a class (component) `Person` by extending `React.Component`. 
+- The `render()` function of your `Person` class should return a _single HTML element_ with the phrase: Hello, my name is NAME and I am interested in INTEREST
+- The `NAME` and `INTEREST` will be passed in via _props_
+- Create anothe class (component) `People` by extending `React.Component`. 
+- The `render()` function of your `People` class should return a _single HTML element_ that contains a `<Person>` object for each element in your `people` constant.
+- Render your `<People>` component to the DOM.
