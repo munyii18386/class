@@ -1,8 +1,8 @@
 // Import Component
-import { Component } from 'react';
+import React, { Component } from 'react';
 
 // Create a SearchApp Component
-class SearchApp extends React.Component {
+class SearchApp extends Component {
     // In the constructor, set the initial state of search to empty string
     // Also *bind `this`* to the handleChange function
     constructor(props) {
@@ -47,7 +47,7 @@ class SearchApp extends React.Component {
 }
 
 // UserInput component
-class UserInput extends React.Component {
+class UserInput extends Component {
     constructor(props) {
         super(props)
     }
@@ -62,7 +62,7 @@ class UserInput extends React.Component {
 }
 
 // Simple TableRow component for showing a <tr>
-class TableRow extends React.Component {
+class TableRow extends Component {
     render() {
         return (
             <tr>
@@ -81,7 +81,7 @@ class TableRow extends React.Component {
 ;
 
 // Class for a table
-class Table extends React.Component {
+class Table extends Component {
     constructor(props) {
         super(props);
     }
