@@ -17,7 +17,6 @@ class Puppy {
     // Render a Div that you can click on to bark
     render() {
         let puppyCard = $('<div>');
-        puppyCard.css('font-size', '100px');
         puppyCard.attr('title', `puppy that says ${this.sound}`);
         puppyCard.attr('class', 'puppyCard col-sm-4');
         puppyCard.css('background-image', `url(${this.img})`);
@@ -74,7 +73,10 @@ class PuppyApp {
     // Add puppy: pushes new data into list of puppies and re-renders the app
     addPuppy(img, sound) {
         console.log(this);
-        this.puppyList.push({ url: img, sound: sound });
+        this.puppyList.push({
+            url: img,
+            sound: sound
+        });
         this.render();
     }
 
